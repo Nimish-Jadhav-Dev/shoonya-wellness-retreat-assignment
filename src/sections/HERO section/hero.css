@@ -17,7 +17,7 @@
 .heroImage {
     width: 92vw;
     height: 79%;
-    background-image: url('../magical-rishikesh.jpg'); 
+    background-image: url('https://placehold.co/600x400?text=Hero+Image'); 
     background-size: cover;
     background-position: center;
     border-radius: 5px; /* Nice looking border radius */

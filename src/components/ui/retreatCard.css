@@ -7,12 +7,11 @@
     border-radius: 7px; /* Nice looking border radius */
     display: flex;
     flex-direction: column;
-    z-index: 1;
 }
 
 .retreatImage {
     width: 60%;
-    height: 60%;
+    height: 180px;
     object-fit: cover;
     border-radius: 7px; /* Nice looking border radius */
 }
@@ -46,7 +45,7 @@
 @media (max-width: 480px) {
     .retreatCard {
         width: 90vw; /* Adjust width for very small screens */
-        margin: 5vw auto; /* Center the card */
+        margin: 2vw auto; /* Center the card */
         padding: 2vw;
         height: 50vh;
     }

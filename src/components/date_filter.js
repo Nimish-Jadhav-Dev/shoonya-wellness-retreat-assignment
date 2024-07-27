@@ -1,26 +1,24 @@
-import React from 'react'
-import Dropdown from './dropdown';
+import React, {useState} from 'react';
+import Dropdown from './ui/dropdown';
 
-const DateFilter = () => {
-    const options = [
-        { value: '2023-24', label: '2023-24' },
-        { value: '2024-25', label: '2024-25' },
-      ];
-    
-      const handleSelect = (option) => {
-        console.log('Selected option:', option);
-        // Do something with the selected option
-      };
-    
-      return (
-        <>
-          <Dropdown
-            options={options}
-            onSelect={handleSelect}
-            placeholder="Filter by Date"
-          />
-        </>
-      );
+const DateFilter = ({ onFilter }) => {
+  const options = [
+    { value: '', label: 'All' },
+    { value: '2023', label: '2023' },
+    { value: '2024', label: '2024' },
+  ];
+
+  const handleSelect = (option) => {
+    onFilter(option.value);
+  };
+
+  return (
+    <Dropdown
+      options={options}
+      onSelect={handleSelect}
+      placeholder="Filter by Date"
+    />
+  );
 }
 
-export default DateFilter
+export default DateFilter;

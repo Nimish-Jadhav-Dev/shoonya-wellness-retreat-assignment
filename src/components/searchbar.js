@@ -1,20 +1,16 @@
-import React,{ useState } from 'react'
-import SearchBar from './searchComp';
+import React from 'react'
+import SearchBar from './ui/searchComp';
 
-const Search = () => {
-    const [searchResults, setSearchResults] = useState([]);
+const Search = ({onSearch}) => {
 
     const handleSearch = (searchTerm) => {
       console.log('Searching for:', searchTerm);
-      // Implement your search logic here
-      // For example:
-      // const results = performSearch(searchTerm);
-      // setSearchResults(results);
+      onSearch(searchTerm);
     };
   return (
     <SearchBar
         onSearch={handleSearch}
-        placeholder="Search retreats..."
+        placeholder="Search retreats by title..."
       />
   )
 }

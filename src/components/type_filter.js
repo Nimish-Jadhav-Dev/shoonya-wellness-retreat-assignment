@@ -1,27 +1,20 @@
-import React from 'react'
-import Dropdown from './dropdown';
+import React from 'react';
+import Dropdown from './ui/dropdown';
 
-const TypeFilter = () => {
-    const options = [
-        { value: 'yoga', label: 'Yoga' },
-        { value: 'meditation', label: 'Meditation' },
-        { value: 'detox', label: 'Detox' },
-      ];
-    
-      const handleSelect = (option) => {
-        console.log('Selected option:', option);
-        // Do something with the selected option
-      };
-    
-      return (
-        <>
-          <Dropdown
-            options={options}
-            onSelect={handleSelect}
-            placeholder="Filter by retreat type"
-          />
-        </>
-      );
-}
+const TypeFilter = ({ onFilterChange, types }) => {
+  const options = types.map(type => ({ label: type.charAt(0).toUpperCase() + type.slice(1), value: type }));
 
-export default TypeFilter
+  const handleSelect = (option) => {
+    onFilterChange(option.value);
+  };
+  
+  return (
+    <Dropdown
+      options={options}
+      onSelect={handleSelect}
+      placeholder="Filter by retreat type"
+    />
+  );
+};
+
+export default TypeFilter;
