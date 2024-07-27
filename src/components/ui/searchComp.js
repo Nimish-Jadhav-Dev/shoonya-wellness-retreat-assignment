@@ -15,7 +15,7 @@ const SearchBar = ({ onSearch, placeholder = 'Search...',className = '' }) => {
   const debouncedSearch = useCallback(
     debounce((term) => onSearch(term), 300),
     [onSearch]
-  );
+  ); // added debouncing 
 
   const handleChange = (e) => {
     const newTerm = e.target.value;

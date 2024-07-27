@@ -3,7 +3,7 @@ import './retreatCard.css'
 import { formatDateRange } from '../utils/formatDate';
 
 const RetreatCard = ({ title, description, date, duration, location, price, imageUrl }) => {
-  const formattedDateRange = formatDateRange(date, duration);
+  const formattedDateRange = formatDateRange(date, duration); // formatting the date 
   return (
     <div className='retreatCard'>
     <img src={imageUrl} alt=''  className='retreatImage'></img>

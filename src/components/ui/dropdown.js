@@ -30,7 +30,7 @@ const Dropdown = ({
       return () => {
         document.removeEventListener('mousedown', handleClickOutside);
       };
-    }, []);
+    }, []); // functionality added when clicked outside the dropdown it should get closed
 
   return (
     <div className={`dropdown ${className}`} ref={dropdownRef}>

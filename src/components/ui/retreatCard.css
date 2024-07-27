@@ -2,9 +2,9 @@
 .retreatCard {
     padding: 1vw;
     width: 28vw;
-    height: 350px; /* Half of the screen height */
-    background-color: #e0d9cf; /* Light background color */
-    border-radius: 7px; /* Nice looking border radius */
+    height: 350px; 
+    background-color: #e0d9cf; 
+    border-radius: 7px; 
     display: flex;
     flex-direction: column;
 }
@@ -13,7 +13,7 @@
     width: 60%;
     height: 180px;
     object-fit: cover;
-    border-radius: 7px; /* Nice looking border radius */
+    border-radius: 7px;
 }
 
 .retreatTitle {
@@ -29,7 +29,7 @@
 /* Responsive styles */
 @media (max-width: 768px) {
     .retreatCard {
-        width: 90vw; /* Adjust width for very small screens */
+        width: 90vw; 
         margin: 2vw auto; /* Center the card */
         padding: 2vw;
     }
@@ -38,13 +38,13 @@
         width: 100%;
         height: 45%;
         object-fit: cover;
-        border-radius: 7px; /* Nice looking border radius */
+        border-radius: 7px; 
     }
 }
 
 @media (max-width: 480px) {
     .retreatCard {
-        width: 90vw; /* Adjust width for very small screens */
+        width: 90vw; 
         margin: 2vw auto; /* Center the card */
         padding: 2vw;
         height: 50vh;
@@ -54,6 +54,6 @@
         width: 100%;
         height: 45%;
         object-fit: cover;
-        border-radius: 7px; /* Nice looking border radius */
+        border-radius: 7px; 
     }
 }

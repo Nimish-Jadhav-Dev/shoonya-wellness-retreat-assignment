@@ -1,5 +1,4 @@
 import React from 'react';
-
 import './filterandsearch.css';
 import TypeFilter from '../../components/type_filter';
 import DateFilter from '../../components/date_filter';
