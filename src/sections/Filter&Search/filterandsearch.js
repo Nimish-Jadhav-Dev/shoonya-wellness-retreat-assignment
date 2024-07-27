@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 import './filterandsearch.css';
 import TypeFilter from '../../components/type_filter';
